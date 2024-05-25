@@ -76,33 +76,32 @@ header .logo-link .logo {
 
 section.dishes {
   background-color: #F6F6F6;
-  padding: 4em 1.2em;
+  padding: 2.5em 1.2em;
   box-sizing: border-box;
   z-index: 1;
-  border-radius: 50px;
+  border-radius: 45px;
   margin-top: -65px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  gap: 4em;
+  gap: 3em;
 }
 section.dishes .title {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
+  gap: 4em;
 }
 section.dishes .title h1 {
   font-family: "Shrikhand", serif;
   font-weight: 400;
+  font-size: 2.5em;
 }
 section.dishes .title .card-heart {
   display: flex;
   padding-bottom: 1em;
-  font-size: 1.7em;
+  font-size: 2.5em;
 }
 section.dishes .title .card-heart i {
   position: absolute;
@@ -124,7 +123,7 @@ section.dishes .title .card-heart .full:active {
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
-.dishes .menu {
+.list, .menu {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -132,21 +131,28 @@ section.dishes .title .card-heart .full:active {
   justify-content: center;
   gap: 1.2em;
 }
+
 .dishes .menu .title-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.2em;
 }
-.dishes .menu .title-container h2 {
+.dishes .menu .title-container p {
   font-weight: 300;
-  padding-bottom: 0.2em;
+  font-size: 1.3em;
 }
 .dishes .menu .title-container .underline {
   background-color: #99E2D0;
   height: 3px;
-  width: 3.7em;
+  width: 3.3em;
 }
-.dishes .menu .menu-container {
+.dishes .menu .list {
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+}
+.dishes .menu .list .menu-container {
   border-radius: 17px;
   background: #FFFFFF;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
@@ -154,42 +160,42 @@ section.dishes .title .card-heart .full:active {
   flex-direction: row;
   z-index: 1;
 }
-.dishes .menu .menu-container:active .check-box {
+.dishes .menu .list .menu-container:active .check-box {
   width: 6em;
 }
-.dishes .menu .menu-container .titles {
+.dishes .menu .list .menu-container .titles {
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   padding: 1.5em 0 1.5em 1.5em;
   overflow: hidden;
 }
-.dishes .menu .menu-container .titles .main {
+.dishes .menu .list .menu-container .titles .main {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
 }
-.dishes .menu .menu-container .titles .main h3 {
+.dishes .menu .list .menu-container .titles .main h2 {
   width: 100%;
   font-size: 1.5em;
+  font-weight: 500;
 }
-.dishes .menu .menu-container .titles .main p {
+.dishes .menu .list .menu-container .titles .main h3 {
   font-weight: 300;
   font-size: 1.3em;
 }
-.dishes .menu .menu-container .titles .price {
+.dishes .menu .list .menu-container .titles .price {
   padding-right: 1em;
   font-size: 1.5em;
   font-weight: 700;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   z-index: 1;
 }
-.dishes .menu .menu-container .check-box {
+.dishes .menu .list .menu-container .check-box {
   color: #ffffff;
   background-color: #99E2D0;
   border-radius: 0 17px 17px 0;
@@ -200,7 +206,7 @@ section.dishes .title .card-heart .full:active {
   width: 0%;
   transition: all 1s;
 }
-.dishes .menu .menu-container .check-box i {
+.dishes .menu .list .menu-container .check-box i {
   font-size: 1.5em;
 }
 
@@ -249,10 +255,8 @@ section.dishes .title .card-heart .full:active {
   align-items: center;
   padding: 0em 1.2em 0em 1.2em;
 }
-.main-footer .title-container h3 {
-  color: rgb(255, 255, 255);
-  font-family: Shrikhand, serif;
-  font-weight: 300;
+.main-footer .title-container img {
+  width: 50%;
 }
 
 .footer-nav {

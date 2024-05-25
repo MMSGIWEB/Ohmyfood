@@ -11,34 +11,33 @@
 
 section.dishes {
     background-color: #F6F6F6;
-    padding: 4em 1.2em;
+    padding: 2.5em 1.2em;
     box-sizing: border-box;
     z-index: 1;
-    border-radius: 50px;
+    border-radius: 45px;
     margin-top: -65px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 4em;
+    gap: 3em;
 
     .title {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: start;
         align-items: center;
+        gap: 4em;
 
         h1 {
             font-family: 'Shrikhand', serif;
             font-weight: 400;
+            font-size: 2.5em;
         }
 
         .card-heart {
             display: flex;
             padding-bottom: 1em;
-            font-size: 1.7em;
+            font-size: 2.5em;
             
             i{
                 position: absolute;

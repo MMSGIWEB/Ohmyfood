@@ -54,7 +54,7 @@ header .home-link {
   justify-content: center;
 }
 header .home-link .logo {
-  width: 40%;
+  width: 36%;
 }
 header .location-line {
   display: flex;
@@ -324,7 +324,7 @@ section.top .button-container1 .cta-button1:active {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 1.5em;
+  font-size: 1.7em;
   pointer-events: auto;
 }
 .card-heart-content .card-heart i {
@@ -368,10 +368,8 @@ section.top .button-container1 .cta-button1:active {
   align-items: center;
   padding: 0em 1.2em 0em 1.2em;
 }
-.main-footer .title-container h3 {
-  color: rgb(255, 255, 255);
-  font-family: Shrikhand, serif;
-  font-weight: 300;
+.main-footer .title-container img {
+  width: 50%;
 }
 
 .footer-nav {
@@ -420,32 +418,35 @@ section.top .button-container1 .cta-button1:active {
   }
   .main-container .functioning-container {
     padding-bottom: 3.5em;
-  }
-  .main-container .functioning-container .title {
-    width: 68%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: start;
+    margin: auto;
   }
   .main-container .functioning-container .funct-list {
     flex-direction: row;
   }
   .main-container .restaurants {
-    gap: 2em;
-    padding: 40px 10px;
-  }
-  .main-container .restaurants .title {
-    padding-left: 7em;
+    gap: 1.5em;
+    padding: 3em 11em;
   }
   .main-container .restaurants .restaurants-cards {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3em;
-    -moz-column-gap: 5em;
-         column-gap: 5em;
   }
   .main-container .restaurants .restaurants-cards .card-link {
-    width: 38%;
+    width: 45%;
+    cursor: auto;
   }
   .main-container .restaurants .restaurants-cards .card-link img {
-    height: 180px;
+    height: 140px;
+  }
+  .main-container .restaurants .restaurants-cards .card-link .card-titles {
+    padding: 0.7em 0.7em;
+  }
+  .main-container .restaurants .restaurants-cards .card-link i {
+    cursor: pointer;
   }
   .main-container .main-footer {
     flex-direction: row-reverse;
