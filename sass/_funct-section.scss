@@ -1,13 +1,13 @@
 .main-container {
 
-    .functioning-container {
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      padding: 3em 1.2em;
+  .functioning-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 3em 1.2em;
   }
 } 
 
@@ -54,7 +54,7 @@
         align-items: center;
         width: 100%;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1.2em;
         color: black;
         background-color: rgb(246, 246, 246);
         border-color: rgb(246, 246, 246);
@@ -65,17 +65,7 @@
         border-width: 1px;
         border-style: solid;
 
-        .fa-solid {
-          font-size: 20px;
-          padding-bottom: 6px;
-        }
-
-        .fa-mobile-screen-button, .fa-list-ul {
-          color: rgb(126, 126, 126);
-        }
-              
-                
-        .fa-store {
+        &:hover .fa-solid {
           color: rgb(147, 86, 220);
         }
       }

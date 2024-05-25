@@ -55,10 +55,13 @@
 
         .main-footer {
             flex-direction: row-reverse;
-            justify-content: flex-start;
-            align-items: flex-end;
-            padding: 4em 3em 2em 3em;
-            gap: 5em;
+            justify-content: end;
+            align-items: end;
+            padding: 1em ;
+            height: 6em;
+            gap: 3em;
+            box-sizing: border-box;
+
 
             .footer-nav {
                 flex-direction: row;
