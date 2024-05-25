@@ -49,12 +49,12 @@ header .home-link {
   width: 100%;
   background-color: white;
   filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.17));
-  padding: 20px 0px;
+  padding: 15px 0 12px 0;
   display: flex;
   justify-content: center;
 }
 header .home-link .logo {
-  width: 50%;
+  width: 40%;
 }
 header .location-line {
   display: flex;
@@ -113,7 +113,7 @@ section.top h1 {
 }
 section.top p {
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 section.top .button-container1 {
   display: flex;
@@ -214,7 +214,7 @@ section.top .button-container1 .cta-button1:active {
   align-items: center;
   width: 100%;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
   background-color: rgb(246, 246, 246);
   border-color: rgb(246, 246, 246);
@@ -224,6 +224,9 @@ section.top .button-container1 .cta-button1:active {
   padding: 27px 40px 27px 27px;
   border-width: 1px;
   border-style: solid;
+}
+.functioning-container .funct-list li .funct-list-button .fa-solid {
+  color: #7e7e7e;
 }
 .functioning-container .funct-list li .funct-list-button:hover .fa-solid {
   color: rgb(147, 86, 220);
@@ -314,27 +317,29 @@ section.top .button-container1 .cta-button1:active {
   font-weight: 300;
 }
 
-.card-heart {
+.card-heart-content {
   width: 15%;
+}
+.card-heart-content .card-heart {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  font-size: 2.5em;
+  align-items: flex-end;
+  font-size: 1.5em;
   pointer-events: auto;
 }
-.card-heart i {
+.card-heart-content .card-heart i {
   position: absolute;
-  padding: 1em;
+  padding: 0 1em;
 }
-.card-heart .empty {
+.card-heart-content .card-heart .empty {
   color: #101010;
 }
-.card-heart .full {
+.card-heart-content .card-heart .full {
   opacity: 0;
   color: transparent;
   transition: transform 300ms 0s;
 }
-.card-heart .full:active {
+.card-heart-content .card-heart .full:active {
   opacity: 1;
   transform: scale(1.025);
   -webkit-background-clip: text;

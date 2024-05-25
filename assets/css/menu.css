@@ -206,34 +206,6 @@ section.dishes .title h1 {
   transform: scale(1.15);
 }
 
-.card-heart {
-  width: 15%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 2.5em;
-  pointer-events: auto;
-}
-.card-heart i {
-  position: absolute;
-  padding: 1em;
-}
-.card-heart .empty {
-  color: #101010;
-}
-.card-heart .full {
-  opacity: 0;
-  color: transparent;
-  transition: transform 300ms 0s;
-}
-.card-heart .full:active {
-  opacity: 1;
-  transform: scale(1.025);
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-
 .main-container .main-footer {
   display: flex;
   flex-direction: column;

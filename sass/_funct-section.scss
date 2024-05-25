@@ -54,7 +54,7 @@
         align-items: center;
         width: 100%;
         font-weight: 500;
-        font-size: 1.2em;
+        font-size: 1em;
         color: black;
         background-color: rgb(246, 246, 246);
         border-color: rgb(246, 246, 246);
@@ -64,6 +64,10 @@
         padding: 27px 40px 27px 27px;
         border-width: 1px;
         border-style: solid;
+
+        .fa-solid {
+          color: #7e7e7e;
+        }
 
         &:hover .fa-solid {
           color: rgb(147, 86, 220);
