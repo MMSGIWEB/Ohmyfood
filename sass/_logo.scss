@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  padding: .1em 0;
+
+  .header-nav {
+    width: 100%;
+    display: flex;
+  }
+    .homepage-link{
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.2em 0 1.2em 2em;
+    
+      .fa-arrow-left {
+        width: 100%;
+        font-size: 2em;
+        color: rgba(53, 53, 53, 1);
+      }
+    }
+
+    .logo-link, .logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center
+    } 
+
+    .logo-link {
+      width: 100%;
+      background-color: white;
+      padding: 20px 0px;
+      
+      .logo {
+        width: 60%;
+      }
+    }
+}

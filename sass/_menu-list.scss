@@ -1,0 +1,122 @@
+.dishes {
+    .menu {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2em;
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h2  {
+                font-weight: 300;
+                padding-bottom: .2em;
+            }
+
+            .underline {
+                background-color: #99E2D0;
+                    height: 3px;
+                    width: 3.7em;
+            }
+        }
+
+        .menu-container {
+            border-radius: 17px;
+            background: #FFFFFF;
+            box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+            display: flex;
+            flex-direction: row;
+            z-index: 1;
+            // transition: transform 4s;
+            // transform: translateX(0);
+
+            // &:active {
+            //     transform: translateX(.70);
+            // }
+            
+            
+            
+            .titles {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5em 0 1.5em 1.5em;
+                overflow: hidden;
+                
+                &:active + .check-box {
+                    transform: translateX(-19px);
+                    gap: 5em;
+                }
+
+                .main {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3em;
+
+                    h3 {
+                        width: 100%;
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 1.3em;
+
+                    }
+
+                    &:active + .price {
+                        transform: translateX(-105px);
+                   
+                    }
+                }
+
+                .price {
+                    padding-right: 1em;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    z-index: 1;
+                    transition: all 200ms ease-out;
+                    transform: translateX(0px);
+                    transition-delay: 0s;
+                    transform-origin: right;
+                    animation-delay: 60s;
+                }
+            }
+
+           
+
+            .check-box {
+                color: #ffffff;
+                background-color: #99E2D0;
+                border-radius: 0 17px 17px 0;
+                padding: 2.65em 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                overflow: hidden;
+                right: 0;
+                transform: translateX(70px);
+                transition: all 200ms ease-out;
+                transition-delay: 0s;
+                transform-origin: right;
+                animation-delay: 60s;
+                animation-fill-mode: both;
+
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

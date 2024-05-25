@@ -1,0 +1,28 @@
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+    .cta-button {
+        color: white;
+        font-weight: 500;
+        font-size: 1.2em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+        cursor: pointer;
+        border-radius: 35px;
+        border-width: 0px;
+        background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+        padding: 22px 70px;
+        transition: transform 400ms ease 300ms;
+
+        &:hover {
+    // background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+            opacity: 85%;
+            transform: scale(1.025);
+        }
+
+        &:active {
+        transform: scale(1.15);
+        }
+    }
+}

@@ -1,0 +1,315 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+menu {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  padding: 0.1em 0;
+}
+header .header-nav {
+  width: 100%;
+  display: flex;
+}
+header .homepage-link {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2em 0 1.2em 2em;
+}
+header .homepage-link .fa-arrow-left {
+  width: 100%;
+  font-size: 2em;
+  color: rgb(53, 53, 53);
+}
+header .logo-link, header .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .logo-link {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0px;
+}
+header .logo-link .logo {
+  width: 60%;
+}
+
+.under-main-container, section.dishes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section.dishes {
+  background-color: #F6F6F6;
+  padding: 4em 1.2em;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 50px;
+  margin-top: -65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 4em;
+}
+section.dishes .title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.dishes .title h1 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  width: 85%;
+  font-size: 3em;
+  padding-left: 0.2em;
+}
+
+.dishes .menu {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2em;
+}
+.dishes .menu .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dishes .menu .title-container h2 {
+  font-weight: 300;
+  padding-bottom: 0.2em;
+}
+.dishes .menu .title-container .underline {
+  background-color: #99E2D0;
+  height: 3px;
+  width: 3.7em;
+}
+.dishes .menu .menu-container {
+  border-radius: 17px;
+  background: #FFFFFF;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.dishes .menu .menu-container .titles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0 1.5em 1.5em;
+  overflow: hidden;
+}
+.dishes .menu .menu-container .titles:active + .check-box {
+  transform: translateX(-19px);
+  gap: 5em;
+}
+.dishes .menu .menu-container .titles .main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.dishes .menu .menu-container .titles .main h3 {
+  width: 100%;
+  font-size: 1.5em;
+}
+.dishes .menu .menu-container .titles .main p {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+.dishes .menu .menu-container .titles .main:active + .price {
+  transform: translateX(-105px);
+}
+.dishes .menu .menu-container .titles .price {
+  padding-right: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+  transition: all 200ms ease-out;
+  transform: translateX(0px);
+  transition-delay: 0s;
+  transform-origin: right;
+  animation-delay: 60s;
+}
+.dishes .menu .menu-container .check-box {
+  color: #ffffff;
+  background-color: #99E2D0;
+  border-radius: 0 17px 17px 0;
+  padding: 2.65em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  transform: translateX(70px);
+  transition: all 200ms ease-out;
+  transition-delay: 0s;
+  transform-origin: right;
+  animation-delay: 60s;
+  animation-fill-mode: both;
+}
+.dishes .menu .menu-container .check-box i {
+  font-size: 1.5em;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container .cta-button {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  cursor: pointer;
+  border-radius: 35px;
+  border-width: 0px;
+  background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  padding: 22px 70px;
+  transition: transform 400ms ease 300ms;
+}
+.button-container .cta-button:hover {
+  opacity: 85%;
+  transform: scale(1.025);
+}
+.button-container .cta-button:active {
+  transform: scale(1.15);
+}
+
+.card-heart {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5em;
+  pointer-events: auto;
+}
+.card-heart i {
+  position: absolute;
+  padding: 1em;
+}
+.card-heart .empty {
+  color: #101010;
+}
+.card-heart .full {
+  opacity: 0;
+  color: transparent;
+  transition: transform 300ms 0s;
+}
+.card-heart .full:active {
+  opacity: 1;
+  transform: scale(1.025);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+.main-container .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.2em 0em;
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.main-footer .title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0em 1.2em 0em 1.2em;
+}
+.main-footer .title-container h3 {
+  color: rgb(255, 255, 255);
+  font-family: Shrikhand, serif;
+  font-weight: 300;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding: 0em 1.2em 0em 1.2em;
+}
+.footer-nav .cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.footer-nav .cta a {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  gap: 1em;
+}
+.footer-nav .cta a .fa-utensils {
+  font-size: 1em;
+  display: flex;
+  gap: 0.7em;
+}
+.footer-nav .cta a .fa-handshake-angle {
+  font-size: 0.8em;
+}
+.footer-nav .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.footer-nav .infos a {
+  font-weight: 400;
+  color: #FFFFFF;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,471 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+menu {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container .header-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.18em;
+}
+
+header {
+  width: 100%;
+}
+header .home-link {
+  width: 100%;
+  background-color: white;
+  filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.17));
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+header .home-link .logo {
+  width: 50%;
+}
+header .location-line {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.25));
+  gap: 0.8em;
+  padding: 8px;
+}
+header .location-line i {
+  font-size: 1em;
+  color: rgb(53, 53, 53);
+}
+header .location-line p {
+  margin: 0;
+}
+
+.main-container .under-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.under-main-container section.top {
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 50px 30px;
+}
+
+section.top .titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+  flex-flow: column wrap;
+  gap: 1.2em;
+}
+section.top h1, section.top p {
+  text-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  text-align: center;
+}
+section.top h1 {
+  font-weight: 700;
+}
+section.top p {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+section.top .button-container1 {
+  display: flex;
+  justify-content: center;
+}
+section.top .button-container1 .cta-button1 {
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  cursor: pointer;
+  border-radius: 30px;
+  border-width: 0px;
+  background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  padding: 15px 25px;
+  transition: transform 400ms ease 300ms;
+}
+section.top .button-container1 .cta-button1:hover {
+  opacity: 85%;
+  transform: scale(1.025);
+}
+section.top .button-container1 .cta-button1:active {
+  transform: scale(1.15);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container .cta-button {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
+  cursor: pointer;
+  border-radius: 35px;
+  border-width: 0px;
+  background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  padding: 22px 70px;
+  transition: transform 400ms ease 300ms;
+}
+.button-container .cta-button:hover {
+  opacity: 85%;
+  transform: scale(1.025);
+}
+.button-container .cta-button:active {
+  transform: scale(1.15);
+}
+
+.main-container .functioning-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3em 1.2em;
+}
+
+.functioning-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.functioning-container .title {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.functioning-container .funct-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  list-style: none;
+  gap: 2em;
+  padding: 0px 10px;
+}
+.functioning-container .funct-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.functioning-container .funct-list li p {
+  font-weight: 500;
+  font-size: 13px;
+  color: rgb(246, 246, 246);
+  margin-right: -10px;
+  z-index: 1;
+  border-radius: 100%;
+  padding: 5px 8px;
+  background: rgb(147, 86, 220);
+}
+.functioning-container .funct-list li .funct-list-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  background-color: rgb(246, 246, 246);
+  border-color: rgb(246, 246, 246);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px 0px;
+  gap: 1.3em;
+  border-radius: 20px;
+  padding: 27px 40px 27px 27px;
+  border-width: 1px;
+  border-style: solid;
+}
+.functioning-container .funct-list li .funct-list-button .fa-solid {
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+.functioning-container .funct-list li .funct-list-button .fa-mobile-screen-button, .functioning-container .funct-list li .funct-list-button .fa-list-ul {
+  color: rgb(126, 126, 126);
+}
+.functioning-container .funct-list li .funct-list-button .fa-store {
+  color: rgb(147, 86, 220);
+}
+
+.main-container .restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  padding: 3.5em 1.2em;
+  gap: 1em;
+}
+
+.restaurants .title {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.restaurants-cards .card-link {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants-cards .card-link .new-hut {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 1.5em;
+  right: 1.5em;
+}
+.restaurants-cards .card-link .new-hut p {
+  color: rgb(0, 135, 102);
+  background-color: rgb(153, 226, 208);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 13%;
+  height: 15px;
+  font-size: 1em;
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+  border: 1px solid rgb(153, 226, 208);
+  padding: 10px 9px 14px 13px;
+  border-radius: 2px;
+}
+
+.restaurants-cards .card {
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15px;
+  width: 100%;
+}
+.restaurants-cards .card img {
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+}
+.restaurants-cards .card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants-cards .card .card-content .card-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25em;
+  width: 85%;
+  padding: 1em 0.7em;
+}
+.restaurants-cards .card .card-content .card-titles h3 {
+  font-weight: 700;
+}
+.restaurants-cards .card .card-content .card-titles h3, .restaurants-cards .card .card-content .card-titles p {
+  color: #000000;
+  margin: 0;
+}
+.restaurants-cards .card .card-content .card-titles p {
+  text-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+.card-heart {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2.5em;
+  pointer-events: auto;
+}
+.card-heart i {
+  position: absolute;
+  padding: 1em;
+}
+.card-heart .empty {
+  color: #101010;
+}
+.card-heart .full {
+  opacity: 0;
+  color: transparent;
+  transition: transform 300ms 0s;
+}
+.card-heart .full:active {
+  opacity: 1;
+  transform: scale(1.025);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+.main-container .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.2em 0em;
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.main-footer .title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0em 1.2em 0em 1.2em;
+}
+.main-footer .title-container h3 {
+  color: rgb(255, 255, 255);
+  font-family: Shrikhand, serif;
+  font-weight: 300;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding: 0em 1.2em 0em 1.2em;
+}
+.footer-nav .cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.footer-nav .cta a {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  gap: 1em;
+}
+.footer-nav .cta a .fa-utensils {
+  font-size: 1em;
+  display: flex;
+  gap: 0.7em;
+}
+.footer-nav .cta a .fa-handshake-angle {
+  font-size: 0.8em;
+}
+.footer-nav .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.footer-nav .infos a {
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1000px) {
+  .main-container .main-header .logo {
+    width: 10%;
+  }
+  .main-container .top h1 {
+    font-size: 2.7em;
+  }
+  .main-container .functioning-container {
+    padding-bottom: 3.5em;
+  }
+  .main-container .functioning-container .title {
+    width: 68%;
+  }
+  .main-container .functioning-container .funct-list {
+    flex-direction: row;
+  }
+  .main-container .restaurants {
+    gap: 2em;
+    padding: 40px 10px;
+  }
+  .main-container .restaurants .title {
+    padding-left: 7em;
+  }
+  .main-container .restaurants .restaurants-cards {
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3em;
+    -moz-column-gap: 5em;
+         column-gap: 5em;
+  }
+  .main-container .restaurants .restaurants-cards .card-link {
+    width: 38%;
+  }
+  .main-container .restaurants .restaurants-cards .card-link img {
+    height: 180px;
+  }
+  .main-container .main-footer {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 4em 3em 2em 3em;
+    gap: 5em;
+  }
+  .main-container .main-footer .footer-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+  }
+  .main-container .main-footer .footer-nav .cta, .main-container .main-footer .footer-nav .infos {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}/*# sourceMappingURL=main.css.map */

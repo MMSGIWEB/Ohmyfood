@@ -1,0 +1,76 @@
+@media screen and (min-width: 1000px) {
+    // version desktop header
+    .main-container {
+        
+        .main-header {
+        
+            .logo{
+               width: 10%;
+            }
+        }
+
+        .top {
+            // padding: 50px 25px 30px 25px;
+
+            h1 {
+                font-size: 2.7em;
+            }
+        }
+
+        .functioning-container {
+            padding-bottom: 3.5em;
+
+            .title {
+                width: 68%;
+            }
+
+            .funct-list {
+                flex-direction: row;
+            }
+        }
+
+        .restaurants {
+            gap: 2em;
+            padding: 40px 10px ;
+
+            .title {
+                padding-left: 7em;
+            }
+
+            .restaurants-cards {
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 3em;
+                column-gap: 5em;
+
+                .card-link {
+                    width: 38%;
+
+                    img {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+
+        .main-footer {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            align-items: flex-end;
+            padding: 4em 3em 2em 3em;
+            gap: 5em;
+
+            .footer-nav {
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 2em;
+
+                .cta, .infos {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                }
+            }
+        }
+    }
+}
