@@ -92,14 +92,36 @@ section.dishes .title {
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 section.dishes .title h1 {
   font-family: "Shrikhand", serif;
   font-weight: 400;
-  width: 85%;
-  font-size: 3em;
-  padding-left: 0.2em;
+}
+section.dishes .title .card-heart {
+  display: flex;
+  padding-bottom: 1em;
+  font-size: 1.7em;
+}
+section.dishes .title .card-heart i {
+  position: absolute;
+  cursor: pointer;
+}
+section.dishes .title .card-heart .empty {
+  color: #101010;
+}
+section.dishes .title .card-heart .full {
+  opacity: 0;
+  color: transparent;
+  transition: transform 300ms 0s;
+}
+section.dishes .title .card-heart .full:active {
+  opacity: 1;
+  transform: scale(1.025);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .dishes .menu {
