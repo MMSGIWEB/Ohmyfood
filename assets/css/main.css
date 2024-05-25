@@ -165,8 +165,6 @@ section.top .button-container1 .cta-button1:active {
 
 .main-container .functioning-container {
   background-color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -410,11 +408,14 @@ section.top .button-container1 .cta-button1:active {
 }
 
 @media screen and (min-width: 1000px) {
-  .main-container .main-header .logo {
-    width: 10%;
+  .main-container .main-header .home-link {
+    padding: 30px 0 40px 0;
+  }
+  .main-container .main-header .home-link img {
+    width: 13%;
   }
   .main-container .top h1 {
-    font-size: 2.7em;
+    font-size: 2.5em;
   }
   .main-container .functioning-container {
     padding-bottom: 3.5em;
@@ -425,22 +426,28 @@ section.top .button-container1 .cta-button1:active {
   }
   .main-container .functioning-container .funct-list {
     flex-direction: row;
+    padding: 0;
   }
   .main-container .restaurants {
     gap: 1.5em;
-    padding: 3em 11em;
+    padding: 3em 12em;
+    align-items: center;
+  }
+  .main-container .restaurants .title {
+    width: 67%;
   }
   .main-container .restaurants .restaurants-cards {
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 3em;
+    max-width: 1000px;
   }
   .main-container .restaurants .restaurants-cards .card-link {
     width: 45%;
     cursor: auto;
   }
   .main-container .restaurants .restaurants-cards .card-link img {
-    height: 140px;
+    height: 150px;
   }
   .main-container .restaurants .restaurants-cards .card-link .card-titles {
     padding: 0.7em 0.7em;

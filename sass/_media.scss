@@ -3,16 +3,20 @@
     .main-container {
         
         .main-header {
+
+            .home-link {
+                padding: 30px 0 40px 0;
         
-            .logo{
-               width: 10%;
+                img {
+                   width: 13%;
+                }
             }
         }
 
         .top {
             
             h1 {
-                font-size: 2.7em;
+                font-size: 2.5em;
             }
         }
 
@@ -22,27 +26,35 @@
             padding-right: 0;
             justify-content: start;
             margin: auto;
+            // max-width: 1000px;
 
             .funct-list {
                 flex-direction: row;
+                padding: 0;
             }
         }
 
         .restaurants {
             gap: 1.5em;
-            padding: 3em 11em;
+            padding: 3em 12em;
+            align-items: center;
+
+            .title {
+                width: 67%;
+            }
 
             .restaurants-cards {
                 flex-flow: row wrap;
-                justify-content: space-between;
+                justify-content: space-around;
                 gap: 3em;
+                max-width: 1000px;
 
                 .card-link {
                     width: 45%;
                     cursor: auto;
 
                     img {
-                        height: 140px;
+                        height: 150px;
                     }
 
                     .card-titles {

@@ -1,0 +1,29 @@
+// ****************Menu****************
+@media screen and (min-width: 1000px) {
+    .header-nav {
+        .logo-link {
+            width: 25%;
+            padding: 1.5em 0 2em 0;
+        }
+    }
+
+    .under-main-container {
+        align-items: center;
+    }
+
+    .under-main-container .dishes {
+        max-width: 1300px;
+        
+
+        .title {
+            justify-content: center;
+        }
+
+        .menu {
+            max-width: 900px;
+            // align-items: center;
+        }
+    }
+    
+
+}

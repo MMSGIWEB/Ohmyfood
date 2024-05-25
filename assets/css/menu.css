@@ -171,6 +171,7 @@ section.dishes .title .card-heart .full:active {
   align-items: end;
   padding: 1.5em 0 1.5em 1.5em;
   overflow: hidden;
+  cursor: pointer;
 }
 .dishes .menu .list .menu-container .titles .main {
   display: flex;
@@ -294,4 +295,23 @@ section.dishes .title .card-heart .full:active {
 .footer-nav .infos a {
   font-weight: 400;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-nav .logo-link {
+    width: 25%;
+    padding: 1.5em 0 2em 0;
+  }
+  .under-main-container {
+    align-items: center;
+  }
+  .under-main-container .dishes {
+    max-width: 1300px;
+  }
+  .under-main-container .dishes .title {
+    justify-content: center;
+  }
+  .under-main-container .dishes .menu {
+    max-width: 900px;
+  }
 }/*# sourceMappingURL=menu.css.map */
