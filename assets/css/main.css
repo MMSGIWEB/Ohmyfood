@@ -407,7 +407,7 @@ section.top .button-container1 .cta-button1:active {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .main-container .main-header .home-link {
     padding: 30px 0 40px 0;
   }

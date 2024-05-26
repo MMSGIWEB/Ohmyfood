@@ -1,8 +1,6 @@
 @import 'main-index';
 @import 'logo';
 
-
-
 .under-main-container, section.dishes {
     width: 100%;
     display: flex;
@@ -65,21 +63,8 @@ section.dishes {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import 'menu-list';
 @import 'cta-button';
 @import 'footer';
 @import 'media-menu';
+@import 'media';

@@ -297,7 +297,7 @@ section.dishes .title .card-heart .full:active {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .header-nav .logo-link {
     width: 25%;
     padding: 1.5em 0 2em 0;
@@ -306,12 +306,80 @@ section.dishes .title .card-heart .full:active {
     align-items: center;
   }
   .under-main-container .dishes {
-    max-width: 1300px;
+    max-width: 1400px;
   }
   .under-main-container .dishes .title {
     justify-content: center;
   }
   .under-main-container .dishes .menu {
     max-width: 900px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main-container .main-header .home-link {
+    padding: 30px 0 40px 0;
+  }
+  .main-container .main-header .home-link img {
+    width: 13%;
+  }
+  .main-container .top h1 {
+    font-size: 2.5em;
+  }
+  .main-container .functioning-container {
+    padding-bottom: 3.5em;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: start;
+    margin: auto;
+  }
+  .main-container .functioning-container .funct-list {
+    flex-direction: row;
+    padding: 0;
+  }
+  .main-container .restaurants {
+    gap: 1.5em;
+    padding: 3em 12em;
+    align-items: center;
+  }
+  .main-container .restaurants .title {
+    width: 67%;
+  }
+  .main-container .restaurants .restaurants-cards {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 3em;
+    max-width: 1000px;
+  }
+  .main-container .restaurants .restaurants-cards .card-link {
+    width: 45%;
+    cursor: auto;
+  }
+  .main-container .restaurants .restaurants-cards .card-link img {
+    height: 150px;
+  }
+  .main-container .restaurants .restaurants-cards .card-link .card-titles {
+    padding: 0.7em 0.7em;
+  }
+  .main-container .restaurants .restaurants-cards .card-link i {
+    cursor: pointer;
+  }
+  .main-container .main-footer {
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+    padding: 1em;
+    height: 6em;
+    gap: 3em;
+    box-sizing: border-box;
+  }
+  .main-container .main-footer .footer-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+  }
+  .main-container .main-footer .footer-nav .cta, .main-container .main-footer .footer-nav .infos {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
   }
 }/*# sourceMappingURL=menu.css.map */

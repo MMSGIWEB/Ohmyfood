@@ -1,5 +1,5 @@
 // ****************Menu****************
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     .header-nav {
         .logo-link {
             width: 25%;
@@ -12,8 +12,7 @@
     }
 
     .under-main-container .dishes {
-        max-width: 1300px;
-        
+        max-width: 1400px;
 
         .title {
             justify-content: center;
@@ -21,7 +20,7 @@
 
         .menu {
             max-width: 900px;
-            // align-items: center;
         }
+
     }
 }
