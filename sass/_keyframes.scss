@@ -1,0 +1,8 @@
+/* Animation definition */
+@import 'mixin';
+
+@keyframes pulse {
+  100% {
+    opacity: 0;
+  }
+}

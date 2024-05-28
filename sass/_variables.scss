@@ -1,3 +1,9 @@
+// Colors
 $bckgd: #f6f6f6;
 $green1: #99E2D0;
 $green2: #008766;
+
+// k-pulse
+$num-elem: 3;
+$anim-dur: 2.5s;
+$anim-delay: $anim-dur / $num-elem;

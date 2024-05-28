@@ -17,7 +17,7 @@ section.dishes {
     justify-content: center;
     align-items: center;
     gap: 3em;
-
+         
     .title {
         width: 100%;
         display: flex;
@@ -60,7 +60,6 @@ section.dishes {
             }
         }
     }
-
 }
 
 @import 'menu-list';
