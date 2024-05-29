@@ -1,5 +1,5 @@
-@import 'main-index';
-@import 'logo';
+@import 'layouts/main-index';
+@import 'layouts/logo';
 
 .under-main-container, section.dishes {
     width: 100%;
@@ -62,8 +62,8 @@ section.dishes {
     }
 }
 
-@import 'menu-list';
-@import 'cta-button';
-@import 'footer';
-@import 'media-menu';
-@import 'media';
+@import 'layouts/menu-list';
+@import 'layouts/cta-button';
+@import 'partials/footer';
+@import 'layouts/media-menu';
+@import 'layouts/media';

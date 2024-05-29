@@ -145,7 +145,7 @@ section.dishes .title .card-heart .full:active {
   animation-iteration-count: 1;
   animation-direction: reverse;
   animation-delay: 0s;
-  animation-play-state: backwards;
+  animation-fill-mode: backwards;
 }
 .dishes .container1 {
   animation-delay: 0.8333333333s;
@@ -353,10 +353,10 @@ section.dishes .title .card-heart .full:active {
 }
 @media screen and (min-width: 800px) {
   .main-container .main-header .home-link {
-    padding: 20px 0 25spx 0;
+    padding: 20px 0 25px 0;
   }
   .main-container .main-header .home-link img {
-    width: 12%;
+    width: 11%;
   }
   .main-container .top h1 {
     font-size: 2.5em;

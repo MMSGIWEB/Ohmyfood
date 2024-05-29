@@ -1,5 +1,5 @@
 /* Animation definition */
-@import 'mixin';
+@use '../details/mixin';
 
 @keyframes pulse {
   100% {

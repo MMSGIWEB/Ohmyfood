@@ -1,6 +1,6 @@
-@import 'keyframes';
-@import 'variables';
-@import 'mixin';
+@import '../keyframes/keyframes';
+@import '../details/variables';
+@import '../details/mixin';
 
 .dishes {
     .container {
@@ -17,7 +17,7 @@
         animation-iteration-count: 1;
         animation-direction: reverse;
         animation-delay: 0s;
-        animation-play-state: backwards;
+        animation-fill-mode: backwards;
         @for $i from 1 through $num-elem {
             &#{$i} {
                 animation-delay: $anim-delay * $i;
