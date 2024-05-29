@@ -1,18 +1,18 @@
 /* Animation definition */
 @use '../details/mixin';
 
+// menu apparition
 @keyframes pulse {
   100% {
     opacity: 0;
   }
 }
 
+// loader letters
 @keyframes waiting {
   0% {
     color: #592B25;
     text-shadow: 0 0 7px #592B25;
-    // scale: 1;
-    // opacity: 1;
   }
 
   90% {
@@ -23,7 +23,31 @@
   100% {
     color: #592B25;
     text-shadow: 0 0 7px #592B25;
-    // scale: 0;
-    // opacity: 0;
+
+  }
+} 
+
+// loader container
+@keyframes disappear{
+  0% {
+    opacity: .8;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+  }
+  50% {
+    opacity: .8;
+    z-index: 2
+  }
+  70% {
+    opacity: .4;
+    height: 110%;
+    z-index: 2
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+    height: 150%;
+    z-index: 2
   }
 }

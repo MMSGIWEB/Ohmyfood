@@ -26,6 +26,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    z-index: 1;
+    cursor: pointer;
 
     .new-hut{
       width: 100%;

@@ -13,7 +13,7 @@ section.dishes {
     box-sizing: border-box;
     z-index: 1;
     border-radius: 45px;
-    margin-top: -65px;
+    margin-top: -45px;
     justify-content: center;
     align-items: center;
     gap: 3em;
@@ -29,7 +29,7 @@ section.dishes {
         h1 {
             font-family: 'Shrikhand', serif;
             font-weight: 400;
-            font-size: 2.5em;
+            font-size: 2em;
         }
 
         .card-heart {

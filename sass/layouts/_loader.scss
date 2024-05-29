@@ -2,13 +2,14 @@
 @import '../details/variables';
 
 .loader {
-    position: fixed;
+    position: absolute;
     inset: 0;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 2;
     animation: disappear 3s;
     animation-fill-mode: forwards;
 
@@ -25,17 +26,3 @@
     }
 }
 
-@keyframes disappear{
-    0% {
-        opacity: .8;
-    }
-    50% {
-        opacity: .6;
-    }
-    70% {
-        opacity: .3;
-    }
-    100% {
-        opacity: 0;
-    }
-}
