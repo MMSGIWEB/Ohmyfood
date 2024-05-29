@@ -139,24 +139,8 @@ section.dishes .title .card-heart .full:active {
   padding: 2.5em 1.2em;
   box-sizing: border-box;
   gap: 3em;
-  animation-name: pulse;
-  animation-duration: 2.5s;
-  animation-iteration-count: 1;
-  animation-direction: reverse;
-  animation-delay: 0s;
-  animation-fill-mode: backwards;
 }
-.dishes .container1 {
-  animation-delay: 0.8333333333s;
-}
-.dishes .container2 {
-  animation-delay: 1.6666666667s;
-}
-.dishes .container3 {
-  animation-delay: 2.5s;
-}
-
-.list, .menu {
+.dishes .list, .dishes .menu {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -165,29 +149,43 @@ section.dishes .title .card-heart .full:active {
   width: 100%;
   gap: 1.2em;
 }
-
-.menu .title-container {
+.dishes .menu .title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 0.2em;
 }
-.menu .title-container p {
+.dishes .menu .title-container p {
   font-weight: 300;
   font-size: 1.3em;
 }
-.menu .title-container .underline {
+.dishes .menu .title-container .underline {
   background-color: #99E2D0;
   height: 3px;
   width: 3.3em;
 }
-.menu .list {
+.dishes .menu .list {
   max-width: 900px;
   margin: auto;
   width: 100%;
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
 }
-.menu .list .menu-container {
+.dishes .menu .list1 {
+  animation-delay: 0.8333333333s;
+}
+.dishes .menu .list2 {
+  animation-delay: 1.6666666667s;
+}
+.dishes .menu .list3 {
+  animation-delay: 2.5s;
+}
+.dishes .menu .menu-container {
   border-radius: 17px;
   background: #FFFFFF;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
@@ -195,10 +193,10 @@ section.dishes .title .card-heart .full:active {
   flex-direction: row;
   z-index: 1;
 }
-.menu .list .menu-container:active .check-box {
+.dishes .menu .menu-container:active .check-box {
   width: 6em;
 }
-.menu .list .menu-container .titles {
+.dishes .menu .menu-container .titles {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -208,21 +206,21 @@ section.dishes .title .card-heart .full:active {
   overflow: hidden;
   cursor: pointer;
 }
-.menu .list .menu-container .titles .main {
+.dishes .menu .menu-container .titles .main {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
 }
-.menu .list .menu-container .titles .main h2 {
+.dishes .menu .menu-container .titles .main h2 {
   width: 100%;
   font-size: 1.5em;
   font-weight: 500;
 }
-.menu .list .menu-container .titles .main h3 {
+.dishes .menu .menu-container .titles .main h3 {
   font-weight: 300;
   font-size: 1.3em;
 }
-.menu .list .menu-container .titles .price {
+.dishes .menu .menu-container .titles .price {
   padding-right: 1em;
   font-size: 1.5em;
   font-weight: 700;
@@ -231,7 +229,7 @@ section.dishes .title .card-heart .full:active {
   align-items: flex-end;
   z-index: 1;
 }
-.menu .list .menu-container .check-box {
+.dishes .menu .menu-container .check-box {
   color: #ffffff;
   background-color: #99E2D0;
   border-radius: 0 17px 17px 0;
@@ -243,7 +241,7 @@ section.dishes .title .card-heart .full:active {
   transition: all 1s;
   animation-delay: 1s;
 }
-.menu .list .menu-container .check-box i {
+.dishes .menu .menu-container .check-box i {
   font-size: 1.5em;
 }
 
@@ -266,9 +264,10 @@ section.dishes .title .card-heart .full:active {
 .button-container .cta-button:hover {
   opacity: 85%;
   transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 10px 0px;
 }
 .button-container .cta-button:active {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .main-container .main-footer {
@@ -349,9 +348,6 @@ section.dishes .title .card-heart .full:active {
   }
   .under-main-container .dishes .menu {
     max-width: 900px;
-  }
-  .under-main-container .dishes .menu .menu-container:hover .check-box {
-    width: 6em;
   }
 }
 @media screen and (min-width: 800px) {

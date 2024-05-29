@@ -16,13 +16,13 @@
         transition: transform 400ms ease 300ms;
 
         &:hover {
-    // background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
             opacity: 85%;
             transform: scale(1.025);
+            box-shadow: rgba(0, 0, 0, .7) 0px 4px 10px 0px;
         }
 
         &:active {
-        transform: scale(1.15);
+        transform: scale(1.1);
         }
     }
 }

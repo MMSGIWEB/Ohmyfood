@@ -157,9 +157,10 @@ section.top .button-container1 .cta-button1:active {
 .button-container .cta-button:hover {
   opacity: 85%;
   transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 10px 0px;
 }
 .button-container .cta-button:active {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .main-container .functioning-container {
