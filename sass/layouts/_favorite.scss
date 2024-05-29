@@ -1,0 +1,32 @@
+.card-heart-content {
+    width: 15%;
+    .card-heart {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 1.7em;
+        pointer-events: auto;
+        
+        i{
+            position: absolute;
+            padding: 0 1em;
+        }
+    
+        .empty {
+            color: #101010;
+        }
+        
+        .full {
+            opacity: 0;
+            color: transparent;
+            transition: transform 300ms 0s;
+    
+        &:active {
+            opacity: 1;
+            transform: scale(1.025);
+            background-clip: text;
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        }
+        }
+    }
+}

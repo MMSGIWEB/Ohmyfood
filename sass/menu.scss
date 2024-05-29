@@ -1,7 +1,5 @@
-@import 'main-index';
-@import 'logo';
-
-
+@import 'layouts/main-index';
+@import 'layouts/logo';
 
 .under-main-container, section.dishes {
     width: 100%;
@@ -11,50 +9,61 @@
 
 section.dishes {
     background-color: #F6F6F6;
-    padding: 4em 1.2em;
+    padding: 2.5em 1.2em;
     box-sizing: border-box;
     z-index: 1;
-    border-radius: 50px;
+    border-radius: 45px;
     margin-top: -65px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 4em;
-
+    gap: 3em;
+         
     .title {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: start;
         align-items: center;
+        gap: 4em;
 
         h1 {
             font-family: 'Shrikhand', serif;
             font-weight: 400;
-            width: 85%;
-            font-size: 3em;
-            padding-left: .2em;
+            font-size: 2.5em;
+        }
+
+        .card-heart {
+            display: flex;
+            padding-bottom: 1em;
+            font-size: 2.5em;
+            
+            i{
+                position: absolute;
+                cursor: pointer;
+            }
+        
+            .empty {
+                color: #101010;
+            }
+            
+            .full {
+                opacity: 0;
+                color: transparent;
+                transition: transform 300ms 0s;
+        
+            &:active {
+                opacity: 1;
+                transform: scale(1.025);
+                background-clip: text;
+                background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            }
+            }
         }
     }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import 'menu-list';
-@import 'cta-button';
-@import 'favorite';
-@import 'footer';
+@import 'layouts/menu-list';
+@import 'layouts/cta-button';
+@import 'partials/footer';
+@import 'layouts/media-menu';
+@import 'layouts/media';

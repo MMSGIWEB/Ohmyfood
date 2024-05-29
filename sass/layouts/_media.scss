@@ -1,53 +1,68 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     // version desktop header
     .main-container {
         
         .main-header {
+
+            .home-link {
+                padding: 20px 0 25px 0;
         
-            .logo{
-               width: 10%;
+                img {
+                   width: 11%;
+                }
             }
         }
 
         .top {
-            // padding: 50px 25px 30px 25px;
-
+            
             h1 {
-                font-size: 2.7em;
+                font-size: 2.2em;
             }
         }
 
         .functioning-container {
             padding-bottom: 3.5em;
-
-            .title {
-                width: 68%;
-            }
+            padding-left: 0;
+            padding-right: 0;
+            justify-content: start;
+            margin: auto;
+            max-width: 1000px;
 
             .funct-list {
                 flex-direction: row;
+                padding: 0;
             }
         }
 
         .restaurants {
-            gap: 2em;
-            padding: 40px 10px ;
+            gap: 1.5em;
+            // padding: 3em 12em;
+            align-items: center;
 
             .title {
-                padding-left: 7em;
+                position: relative;
+                right: 26em;
             }
 
             .restaurants-cards {
                 flex-flow: row wrap;
-                justify-content: center;
+                justify-content: space-around;
                 gap: 3em;
-                column-gap: 5em;
+                max-width: 1000px;
 
                 .card-link {
-                    width: 38%;
+                    width: 45%;
 
                     img {
-                        height: 180px;
+                        height: 150px;
+                    }
+
+                    .card-titles {
+                        padding: .7em .7em;
+                    }
+
+                    i  {
+                       cursor: pointer; 
                     }
                 }
             }
