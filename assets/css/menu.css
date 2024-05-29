@@ -28,10 +28,11 @@ body {
 
 .main-container {
   width: 100%;
-  min-width: 320px;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 header {
