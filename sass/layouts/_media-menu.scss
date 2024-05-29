@@ -12,7 +12,7 @@
     }
 
     .under-main-container .dishes {
-        max-width: 1400px;
+        max-width: 1200px;
 
         .title {
             justify-content: center;
@@ -20,6 +20,12 @@
 
         .menu {
             max-width: 900px;
+
+            .menu-container {
+                &:hover .check-box {
+                    width: 6em;
+                } 
+            }
         }
 
     }

@@ -124,7 +124,6 @@ section.top .button-container1 .cta-button1 {
   font-weight: normal;
   font-size: 1em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  cursor: pointer;
   border-radius: 30px;
   border-width: 0px;
   background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
@@ -148,7 +147,7 @@ section.top .button-container1 .cta-button1:active {
   font-weight: 500;
   font-size: 1.2em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px;
-  cursor: pointer;
+  cursor: auto;
   border-radius: 35px;
   border-width: 0px;
   background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
@@ -415,7 +414,7 @@ section.top .button-container1 .cta-button1:active {
     width: 11%;
   }
   .main-container .top h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   .main-container .functioning-container {
     padding-bottom: 3.5em;
@@ -423,6 +422,7 @@ section.top .button-container1 .cta-button1:active {
     padding-right: 0;
     justify-content: start;
     margin: auto;
+    max-width: 1000px;
   }
   .main-container .functioning-container .funct-list {
     flex-direction: row;
@@ -430,11 +430,11 @@ section.top .button-container1 .cta-button1:active {
   }
   .main-container .restaurants {
     gap: 1.5em;
-    padding: 3em 12em;
     align-items: center;
   }
   .main-container .restaurants .title {
-    width: 67%;
+    position: relative;
+    right: 26em;
   }
   .main-container .restaurants .restaurants-cards {
     flex-flow: row wrap;
@@ -444,7 +444,6 @@ section.top .button-container1 .cta-button1:active {
   }
   .main-container .restaurants .restaurants-cards .card-link {
     width: 45%;
-    cursor: auto;
   }
   .main-container .restaurants .restaurants-cards .card-link img {
     height: 150px;

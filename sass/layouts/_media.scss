@@ -16,7 +16,7 @@
         .top {
             
             h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
             }
         }
 
@@ -26,7 +26,7 @@
             padding-right: 0;
             justify-content: start;
             margin: auto;
-            // max-width: 1000px;
+            max-width: 1000px;
 
             .funct-list {
                 flex-direction: row;
@@ -36,11 +36,12 @@
 
         .restaurants {
             gap: 1.5em;
-            padding: 3em 12em;
+            // padding: 3em 12em;
             align-items: center;
 
             .title {
-                width: 67%;
+                position: relative;
+                right: 26em;
             }
 
             .restaurants-cards {
@@ -51,7 +52,6 @@
 
                 .card-link {
                     width: 45%;
-                    cursor: auto;
 
                     img {
                         height: 150px;
