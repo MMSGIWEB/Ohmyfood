@@ -6,3 +6,24 @@
     opacity: 0;
   }
 }
+
+@keyframes waiting {
+  0% {
+    color: #592B25;
+    text-shadow: 0 0 7px #592B25;
+    // scale: 1;
+    // opacity: 1;
+  }
+
+  90% {
+    color: whitesmoke;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #592B25;
+    text-shadow: 0 0 7px #592B25;
+    // scale: 0;
+    // opacity: 0;
+  }
+}

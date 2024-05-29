@@ -1,0 +1,41 @@
+@import '../keyframes/keyframes';
+@import '../details/variables';
+
+.loader {
+    position: fixed;
+    inset: 0;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: disappear 3s;
+    animation-fill-mode: forwards;
+
+    .letter {
+        color: #592B25;
+        font-size: 2em;
+        letter-spacing: 1em;
+        animation: waiting 1.4s linear infinite;
+        @for $i from 1 through $num-elem2 {
+            &-#{$i} {
+                animation-delay: $anim-delay2 * $i;
+            }
+        }
+    }
+}
+
+@keyframes disappear{
+    0% {
+        opacity: .8;
+    }
+    50% {
+        opacity: .6;
+    }
+    70% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,3 +1,85 @@
+/* Animation definition */
+@keyframes pulse {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes waiting {
+  0% {
+    color: #592B25;
+    text-shadow: 0 0 7px #592B25;
+  }
+  90% {
+    color: whitesmoke;
+    text-shadow: none;
+  }
+  100% {
+    color: #592B25;
+    text-shadow: 0 0 7px #592B25;
+  }
+}
+.loader {
+  position: fixed;
+  inset: 0;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: disappear 3s;
+  animation-fill-mode: forwards;
+}
+.loader .letter {
+  color: #592B25;
+  font-size: 2em;
+  letter-spacing: 1em;
+  animation: waiting 1.4s linear infinite;
+}
+.loader .letter-1 {
+  animation-delay: 0.12s;
+}
+.loader .letter-2 {
+  animation-delay: 0.24s;
+}
+.loader .letter-3 {
+  animation-delay: 0.36s;
+}
+.loader .letter-4 {
+  animation-delay: 0.48s;
+}
+.loader .letter-5 {
+  animation-delay: 0.6s;
+}
+.loader .letter-6 {
+  animation-delay: 0.72s;
+}
+.loader .letter-7 {
+  animation-delay: 0.84s;
+}
+.loader .letter-8 {
+  animation-delay: 0.96s;
+}
+.loader .letter-9 {
+  animation-delay: 1.08s;
+}
+.loader .letter-10 {
+  animation-delay: 1.2s;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;

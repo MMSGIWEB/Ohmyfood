@@ -11,3 +11,14 @@
     justify-content: center;
     align-items: center;
 }
+
+// loader colors
+@mixin bright {
+  color: #592B25;
+  text-shadow: 0 0 7px #592B25;
+}
+  
+@mixin darker {
+  color: whitesmoke;
+  text-shadow: none;
+}
