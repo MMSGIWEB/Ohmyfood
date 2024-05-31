@@ -28,16 +28,26 @@
 } 
 
 // loader container
-@keyframes loading {
+@keyframes disappear{
   0% {
-      z-index: 100;
-      display: flex;
-      opacity: 1;
+    opacity: .8;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
   }
-  
+  50% {
+    opacity: .8;
+    z-index: 2
+  }
+  70% {
+    opacity: .4;
+    height: 110%;
+    z-index: 2
+  }
   100% {
-      z-index: -1;
-      display: none;
-      opacity: 0;
+    opacity: 0;
+    z-index: 0;
+    height: 150%;
+    z-index: 2
   }
 }

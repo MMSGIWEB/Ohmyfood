@@ -13,8 +13,7 @@ h3 {
 }
 
 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -124,8 +123,7 @@ section.dishes .title .card-heart .full {
 section.dishes .title .card-heart .full:active {
   opacity: 1;
   transform: scale(1.025);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
@@ -149,16 +147,27 @@ section.dishes .title .card-heart .full:active {
     text-shadow: 0 0 7px #592B25;
   }
 }
-@keyframes loading {
+@keyframes disappear {
   0% {
-    z-index: 100;
-    display: flex;
-    opacity: 1;
+    opacity: 0.8;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+  }
+  50% {
+    opacity: 0.8;
+    z-index: 2;
+  }
+  70% {
+    opacity: 0.4;
+    height: 110%;
+    z-index: 2;
   }
   100% {
-    z-index: -1;
-    display: none;
     opacity: 0;
+    z-index: 0;
+    height: 150%;
+    z-index: 2;
   }
 }
 /*
@@ -424,9 +433,6 @@ modifié
     flex-direction: row;
     padding: 0;
   }
-  .main-container .functioning-container .funct-list .funct-list-button {
-    font-size: 1.1em;
-  }
   .main-container .restaurants {
     gap: 1.5em;
     align-items: center;
@@ -472,4 +478,6 @@ modifié
     flex-direction: row;
     gap: 1em;
   }
-}/*# sourceMappingURL=menu.css.map */
+}
+
+/*# sourceMappingURL=menu.css.map */
