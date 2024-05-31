@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -42,13 +43,17 @@ header {
 header .header-nav {
   width: 100%;
   display: flex;
+  justify-content: center;
+  height: 4em;
 }
 header .homepage-link {
-  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1.2em 0 1.2em 2em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 header .homepage-link .fa-arrow-left {
   width: 100%;
@@ -61,12 +66,10 @@ header .logo-link, header .logo {
   align-items: center;
 }
 header .logo-link {
-  width: 100%;
   background-color: white;
-  padding: 20px 0px;
 }
 header .logo-link .logo {
-  width: 70%;
+  width: 10em;
 }
 
 .under-main-container, section.dishes {
@@ -90,7 +93,6 @@ section.dishes .title {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: start;
   align-items: center;
   gap: 4em;
 }
@@ -98,11 +100,14 @@ section.dishes .title h1 {
   font-family: "Shrikhand", serif;
   font-weight: 400;
   font-size: 2em;
+  flex: 1;
 }
 section.dishes .title .card-heart {
   display: flex;
   padding-bottom: 1em;
   font-size: 2.5em;
+  width: 1.5em;
+  justify-content: center;
 }
 section.dishes .title .card-heart i {
   position: absolute;
@@ -144,29 +149,21 @@ section.dishes .title .card-heart .full:active {
     text-shadow: 0 0 7px #592B25;
   }
 }
-@keyframes disappear {
+@keyframes loading {
   0% {
-    opacity: 0.8;
-    position: absolute;
-    height: 100%;
-    z-index: 2;
-  }
-  50% {
-    opacity: 0.8;
-    z-index: 2;
-  }
-  70% {
-    opacity: 0.4;
-    height: 110%;
-    z-index: 2;
+    z-index: 100;
+    display: flex;
+    opacity: 1;
   }
   100% {
+    z-index: -1;
+    display: none;
     opacity: 0;
-    z-index: 0;
-    height: 150%;
-    z-index: 2;
   }
 }
+/*
+modifié
+*/
 .dishes .container {
   display: flex;
   justify-content: center;
@@ -240,7 +237,7 @@ section.dishes .title .card-heart .full:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  padding: 1.5em 0 1.5em 1.5em;
+  padding: 1em 0 1em 1.5em;
   overflow: hidden;
   cursor: pointer;
 }
@@ -248,19 +245,25 @@ section.dishes .title .card-heart .full:active {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .dishes .menu .menu-container .titles .main h2 {
   width: 100%;
   font-size: 1.5em;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dishes .menu .menu-container .titles .main h3 {
   font-weight: 300;
   font-size: 1.3em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dishes .menu .menu-container .titles .price {
   padding-right: 1em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -280,7 +283,7 @@ section.dishes .title .card-heart .full:active {
   animation-delay: 1s;
 }
 .dishes .menu .menu-container .check-box i {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .button-container {
@@ -298,14 +301,10 @@ section.dishes .title .card-heart .full:active {
   background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   padding: 22px 70px;
   transition: transform 400ms ease 300ms;
+  cursor: pointer;
 }
-.button-container .cta-button:hover {
-  opacity: 85%;
-  transform: scale(1.025);
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 10px 0px;
-}
-.button-container .cta-button:active {
-  transform: scale(1.1);
+.button-container .cta-button:hover, .button-container .cta-button:active {
+  opacity: 0.8;
 }
 
 .main-container .main-footer {
@@ -330,7 +329,7 @@ section.dishes .title .card-heart .full:active {
   padding: 0em 1.2em 0em 1.2em;
 }
 .main-footer .title-container img {
-  width: 50%;
+  height: 1.5em;
 }
 
 .footer-nav {
@@ -339,6 +338,7 @@ section.dishes .title .card-heart .full:active {
   align-items: flex-start;
   gap: 0.5em;
   padding: 0em 1.2em 0em 1.2em;
+  font-size: 1.2em;
 }
 .footer-nav .cta {
   display: flex;
@@ -395,6 +395,9 @@ section.dishes .title .card-heart .full:active {
   .under-main-container .dishes .title {
     justify-content: center;
   }
+  .under-main-container .dishes .title h1 {
+    flex: initial;
+  }
   .under-main-container .dishes .menu {
     max-width: 900px;
   }
@@ -420,6 +423,9 @@ section.dishes .title .card-heart .full:active {
   .main-container .functioning-container .funct-list {
     flex-direction: row;
     padding: 0;
+  }
+  .main-container .functioning-container .funct-list .funct-list-button {
+    font-size: 1.1em;
   }
   .main-container .restaurants {
     gap: 1.5em;

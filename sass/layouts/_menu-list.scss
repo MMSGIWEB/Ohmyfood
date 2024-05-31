@@ -76,7 +76,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: end;
-                padding: 1.5em 0 1.5em 1.5em;
+                padding: 1em 0 1em 1.5em;
                 overflow: hidden;
                 cursor: pointer;
                 
@@ -84,24 +84,29 @@
                     display: flex;
                     flex-direction: column;
                     gap: .3em;
+                    overflow: hidden;
+                    white-space: nowrap;
 
                     h2 {
                         width: 100%;
                         font-size: 1.5em;
                         font-weight: 500;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
 
                     h3 {
                         font-weight: 300;
                         font-size: 1.3em;
-
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
 
                 }
 
                 .price {
                     padding-right: 1em;
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     font-weight: 700;
                     display: flex;
                     justify-content: center;
@@ -123,7 +128,7 @@
                 animation-delay: 1s;
 
                 i {
-                    font-size: 1.5em;
+                    font-size: 2em;
                 }
             }
         }

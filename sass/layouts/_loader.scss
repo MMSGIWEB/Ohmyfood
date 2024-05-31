@@ -1,17 +1,20 @@
 @import '../keyframes/keyframes';
 @import '../details/variables';
 
+
+/*
+modifié
+*/
 .loader {
-    position: absolute;
+    position: fixed;
     inset: 0;
-    background-color: whitesmoke;
+    background-color: #000000db;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    z-index: 0;
-    animation: disappear 3s;
-    animation-fill-mode: forwards;
+    z-index: -1;
+    animation: loading 2.5s linear;
 
     .letter {
         color: #592B25;
@@ -25,4 +28,3 @@
         }
     }
 }
-

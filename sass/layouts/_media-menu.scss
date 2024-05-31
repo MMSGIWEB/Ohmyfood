@@ -29,6 +29,10 @@
 
         .title {
             justify-content: center;
+
+            h1{
+                flex: initial;
+            }
         }
 
         .menu {
