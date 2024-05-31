@@ -31,6 +31,10 @@
             .funct-list {
                 flex-direction: row;
                 padding: 0;
+
+                &-button{
+                    font-size: 1.1em;
+                }
             }
         }
 
