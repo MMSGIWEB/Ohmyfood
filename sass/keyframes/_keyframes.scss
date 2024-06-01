@@ -8,6 +8,21 @@
   }
 }
 
+// loader container
+@keyframes loading {
+  0% {
+    z-index: 100;
+    display: flex;
+    opacity: 1;
+  }
+  
+  100% {
+    z-index: -1;
+    display: none;
+    opacity: 0;
+  }
+}
+
 // loader letters
 @keyframes waiting {
   0% {
@@ -24,30 +39,5 @@
     color: #592B25;
     text-shadow: 0 0 7px #592B25;
 
-  }
-} 
-
-// loader container
-@keyframes disappear{
-  0% {
-    opacity: .8;
-    position: absolute;
-    height: 100%;
-    z-index: 2;
-  }
-  50% {
-    opacity: .8;
-    z-index: 2
-  }
-  70% {
-    opacity: .4;
-    height: 110%;
-    z-index: 2
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-    height: 150%;
-    z-index: 2
   }
 }

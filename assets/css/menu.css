@@ -94,7 +94,7 @@ section.dishes .title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4em;
+  gap: 2em;
 }
 section.dishes .title h1 {
   font-family: "Shrikhand", serif;
@@ -135,6 +135,18 @@ section.dishes .title .card-heart .full:active {
     opacity: 0;
   }
 }
+@keyframes loading {
+  0% {
+    z-index: 100;
+    display: flex;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    display: none;
+    opacity: 0;
+  }
+}
 @keyframes waiting {
   0% {
     color: #592B25;
@@ -149,29 +161,6 @@ section.dishes .title .card-heart .full:active {
     text-shadow: 0 0 7px #592B25;
   }
 }
-@keyframes disappear {
-  0% {
-    opacity: 0.8;
-    position: absolute;
-    height: 100%;
-    z-index: 2;
-  }
-  50% {
-    opacity: 0.8;
-    z-index: 2;
-  }
-  70% {
-    opacity: 0.4;
-    height: 110%;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-    height: 150%;
-    z-index: 2;
-  }
-}
 /*
 modifié
 */
@@ -182,7 +171,7 @@ modifié
   width: 100%;
   align-items: center;
   max-width: 700px;
-  padding: 2.5em 1.2em;
+  padding: 2.5em 1.2em 0;
   box-sizing: border-box;
   gap: 3em;
 }

@@ -5,6 +5,18 @@
     opacity: 0;
   }
 }
+@keyframes loading {
+  0% {
+    z-index: 100;
+    display: flex;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    display: none;
+    opacity: 0;
+  }
+}
 @keyframes waiting {
   0% {
     color: #592B25;
@@ -17,29 +29,6 @@
   100% {
     color: #592B25;
     text-shadow: 0 0 7px #592B25;
-  }
-}
-@keyframes disappear {
-  0% {
-    opacity: 0.8;
-    position: absolute;
-    height: 100%;
-    z-index: 2;
-  }
-  50% {
-    opacity: 0.8;
-    z-index: 2;
-  }
-  70% {
-    opacity: 0.4;
-    height: 110%;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-    height: 150%;
-    z-index: 2;
   }
 }
 /*
@@ -96,18 +85,6 @@ modifié
   animation-delay: 1.2s;
 }
 
-@keyframes loading {
-  0% {
-    z-index: 100;
-    display: flex;
-    opacity: 1;
-  }
-  100% {
-    z-index: -1;
-    display: none;
-    opacity: 0;
-  }
-}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -448,7 +425,7 @@ section.top .button-container1 .cta-button1:active {
 .card-heart-content .card-heart .full {
   opacity: 0;
   color: transparent;
-  transition: transform 300ms 0s;
+  transition: transform 300ms;
 }
 .card-heart-content .card-heart .full:active {
   opacity: 1;

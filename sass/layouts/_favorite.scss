@@ -19,7 +19,7 @@
         .full {
             opacity: 0;
             color: transparent;
-            transition: transform 300ms 0s;
+            transition: transform 300ms;
     
         &:active {
             opacity: 1;

@@ -29,17 +29,3 @@ modifié
         }
     }
 }
-
-@keyframes loading {
-    0% {
-        z-index: 100;
-        display: flex;
-        opacity: 1;
-    }
-    
-    100% {
-        z-index: -1;
-        display: none;
-        opacity: 0;
-    }
-}
