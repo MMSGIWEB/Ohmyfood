@@ -382,7 +382,7 @@ modifié
 }
 
 @media screen and (min-width: 800px) {
-  .header-nav .homepage-link .logo-link .logo {
+  .header-nav .logo-link .logo {
     width: 100%;
   }
   .under-main-container {
