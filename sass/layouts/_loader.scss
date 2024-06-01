@@ -21,6 +21,7 @@ modifié
         font-size: 2em;
         letter-spacing: 1em;
         animation: waiting 1.4s linear infinite;
+        // boucle sass
         @for $i from 1 through $num-elem2 {
             &-#{$i} {
                 animation-delay: $anim-delay2 * $i;
