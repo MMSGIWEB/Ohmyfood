@@ -467,7 +467,7 @@ modifié
   .main-container .main-footer .footer-nav {
     flex-direction: row;
     justify-content: space-around;
-    gap: 2em;
+    gap: 3em;
   }
   .main-container .main-footer .footer-nav .cta, .main-container .main-footer .footer-nav .infos {
     display: flex;
