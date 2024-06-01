@@ -543,7 +543,7 @@ section.top .button-container1 .cta-button1:active {
     flex-direction: row;
     padding: 0;
   }
-  .main-container .functioning-container .funct-list-button {
+  .main-container .functioning-container .funct-list .funct-list-button {
     font-size: 1.1em;
   }
   .main-container .restaurants {
