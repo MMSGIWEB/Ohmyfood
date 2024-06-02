@@ -397,7 +397,6 @@ section.top .button-container1 .cta-button1:active {
 }
 .restaurants-cards .card .card-content .card-titles h3, .restaurants-cards .card .card-content .card-titles p {
   color: #000000;
-  margin: 0;
 }
 .restaurants-cards .card .card-content .card-titles p {
   text-wrap: wrap;
@@ -405,6 +404,7 @@ section.top .button-container1 .cta-button1:active {
   justify-content: center;
   text-align: center;
   font-weight: 300;
+  font-size: 1.1em;
 }
 
 .card-heart-content {
