@@ -305,6 +305,7 @@ modifié
 }
 .button-container .cta-button:hover, .button-container .cta-button:active {
   opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 10px 0px;
 }
 
 .main-container .main-footer {
