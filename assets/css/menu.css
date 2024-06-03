@@ -205,20 +205,20 @@ modifié
   margin: auto;
   width: 100%;
   animation-name: pulse;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-direction: reverse;
   animation-delay: 0s;
   animation-fill-mode: backwards;
 }
 .dishes .menu .list1 {
-  animation-delay: 0.8333333333s;
+  animation-delay: 0.5s;
 }
 .dishes .menu .list2 {
-  animation-delay: 1.6666666667s;
+  animation-delay: 1s;
 }
 .dishes .menu .list3 {
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
 }
 .dishes .menu .menu-container {
   border-radius: 17px;
