@@ -301,7 +301,6 @@ modifié
   background: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
   padding: 22px 70px;
   transition: transform 400ms ease 300ms;
-  cursor: pointer;
 }
 .button-container .cta-button:hover, .button-container .cta-button:active {
   opacity: 0.8;
