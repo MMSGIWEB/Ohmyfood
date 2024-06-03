@@ -142,7 +142,7 @@ header .home-link {
   justify-content: center;
 }
 header .home-link .logo {
-  width: 36%;
+  width: 10em;
 }
 header .location-line {
   display: flex;
