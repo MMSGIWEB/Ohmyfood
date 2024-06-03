@@ -427,7 +427,7 @@ section.top .button-container1 .cta-button1:active {
 .card-heart-content .card-heart .full {
   opacity: 0;
   color: transparent;
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 .card-heart-content .card-heart .full:active {
   opacity: 1;

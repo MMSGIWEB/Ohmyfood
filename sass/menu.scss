@@ -52,7 +52,7 @@ section.dishes {
             .full {
                 opacity: 0;
                 color: transparent;
-                transition: transform 300ms 0s;
+                transition: transform 500ms 0s;
         
             &:active {
                 opacity: 1;
