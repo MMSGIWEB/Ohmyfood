@@ -119,7 +119,7 @@ section.dishes .title .card-heart .empty {
 section.dishes .title .card-heart .full {
   opacity: 0;
   color: transparent;
-  transition: transform 500ms 0s;
+  transition: transform 500ms;
 }
 section.dishes .title .card-heart .full:active {
   opacity: 1;
