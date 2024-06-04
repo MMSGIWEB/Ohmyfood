@@ -49,7 +49,6 @@
         animation-duration: $anim-dur;
         animation-iteration-count: 1;
         animation-direction: reverse;
-        animation-delay: 0s;
         animation-fill-mode: backwards;
         @for $i from 1 through $num-elem {
             &#{$i} {

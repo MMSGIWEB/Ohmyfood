@@ -208,7 +208,6 @@ modifié
   animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-direction: reverse;
-  animation-delay: 0s;
   animation-fill-mode: backwards;
 }
 .dishes .menu .list1 {
